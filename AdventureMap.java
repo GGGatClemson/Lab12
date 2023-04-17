@@ -16,7 +16,7 @@ public class AdventureMap
      */
     public void addRoom(Room room)
     {
-        
+        map.put(room.getName(), room);
     }
 
     /**
@@ -26,6 +26,6 @@ public class AdventureMap
      */
     public Room getRoom(String roomName)
     {
-        
+        return map.get(roomName);
     }
 }
